@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktívne obrázky</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-wrapper {
+            position: relative;
+            margin: 0.6vw;
+        }
+        .image-wrapper img {
+            width: 20vw;
+            height: 20vw;
+            object-fit: cover;
+            transition: transform 0.3s, filter 0.3s; /* Pridaná tranzícia pre filter */
+            border-radius: 1vw;
+            filter: brightness(80%); /* Pridané stmavenie obrázkov */
+        }
+        .image-wrapper:hover img {
+            transform: scale(1.1);
+            filter: brightness(110%); /* Zosvetlenie obrázkov pri prechode myšou */
+        }
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2vw;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 0.1vw 0.1vw 0.2vw rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <a href="SmartRoom.html"><img src="/Images/SmartRoom.png" alt="Obrázok 1"></a>
+            <div class="image-text">Smart Room</div>
+        </div>
+        <div class="image-wrapper">
+            <a href="MiestnostB.html"><img src="/Images/B406.png" alt="Obrázok 2"></a>
+            <div class="image-text">AR/VR Lab</div>
+        </div>
+        <div class="image-wrapper">
+            <a href="B602.html"><img src="Images/B602.png" alt="Obrázok 3"></a>
+            <div class="image-text">Meeting Room</div>
+        </div>
+    </div>
+</body>
+</html>
