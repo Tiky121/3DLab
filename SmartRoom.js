@@ -13,7 +13,7 @@ const controls = new SPLAT.FPSControls(camera, canvas);
 
 
 async function main() {
-    const url = "/Models/SmartRoom.splat";
+    const url = "Models/SmartRoom.splat";
     await SPLAT.Loader.LoadAsync(url, scene, (progress) => (progressIndicator.value = progress * 100));
     progressDialog.close();
 
