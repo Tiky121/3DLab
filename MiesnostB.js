@@ -13,7 +13,7 @@ const controls = new SPLAT.FPSControls(camera, canvas);
 
 
 async function main() {
-    const url = "Models/MiestnostB.splat";
+    const url = "https://huggingface.co/datasets/Tiky121/Splats/resolve/main/MiestnostB.splat?download=true";
     await SPLAT.Loader.LoadAsync(url, scene, (progress) => (progressIndicator.value = progress * 100));
     progressDialog.close();
 
