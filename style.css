@@ -48,3 +48,35 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background-color: #eee;
 }
+
+.back-arrow {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 2vw;
+    height: 2vw;
+    background-image: url('Images/arrow.png');
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+  
+.back-arrow:hover {
+    transform: scale(1.2);
+}
+
+.fullscreen-icon {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 2vw;
+    height: 2vw;
+    background-image: url('Images/fullscreen.png');
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.fullscreen-icon:hover {
+    transform: scale(1.2);
+}
