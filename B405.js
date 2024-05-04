@@ -8,7 +8,7 @@ const progressIndicator = document.getElementById("progress-indicator");
 const renderer = new SPLAT.WebGLRenderer(canvas);
 const scene = new SPLAT.Scene();
 const camera = new SPLAT.Camera();
-camera.position = new SPLAT.Vector3(0, 0.1, 0);
+camera.position = new SPLAT.Vector3(0, 0, 0);
 const controls = new SPLAT.FPSControls(camera, canvas);
 
 
